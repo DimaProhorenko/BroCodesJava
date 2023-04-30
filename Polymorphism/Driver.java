@@ -36,12 +36,15 @@ public class Driver {
 //		
 //		Animal myDog = new Dog();
 		
-		AnimalList al = new AnimalList(2);
-		al.add(new Dog());
-		al.add(new Cat());;
-		System.out.println(al);
+//		AnimalList al = new AnimalList(2);
+//		al.add(new Dog());
+//		al.add(new Cat());;
+//		System.out.println(al);
 //		Animal d = new Dog();
 //		((Dog) d).play();
+		
+		Duck donald = new Duck("Donald", 20);
+		System.out.println(donald.getName());
 	}
 	
 	public static void doStuff(Animal a) {

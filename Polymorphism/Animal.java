@@ -9,8 +9,14 @@ public class Animal {
 		this.color = color;
 	}
 	
+	public Animal(String name) {
+		this.name = name;
+		System.out.println("Animal arg Constructor");
+	}
+	
 	public Animal() {
 		this("Animal name", "Animal color");
+		System.out.println("Animal no-arg constructor");
 	}
 	
 	public String getName() {
