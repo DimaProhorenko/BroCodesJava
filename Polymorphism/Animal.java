@@ -3,20 +3,27 @@ package Polymorphism;
 public class Animal {
 	private String name;
 	private String color;
+	private static int totalAnimalsNumber = 0;
 	
 	public Animal(String name, String color) {
 		this.name = name;
 		this.color = color;
+		totalAnimalsNumber++;
 	}
 	
 	public Animal(String name) {
 		this.name = name;
 		System.out.println("Animal arg Constructor");
+		totalAnimalsNumber++;
 	}
 	
 	public Animal() {
 		this("Animal name", "Animal color");
 		System.out.println("Animal no-arg constructor");
+	}
+	
+	public static int getTotalAnimalsNumber() {
+		return totalAnimalsNumber;
 	}
 	
 	public String getName() {

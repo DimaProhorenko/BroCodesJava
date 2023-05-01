@@ -44,7 +44,9 @@ public class Driver {
 //		((Dog) d).play();
 		
 		Duck donald = new Duck("Donald", 20);
-		System.out.println(donald.getName());
+		Wolf w = new Wolf();
+		Dog d = new Dog();
+		System.out.println(Animal.getTotalAnimalsNumber());
 	}
 	
 	public static void doStuff(Animal a) {
